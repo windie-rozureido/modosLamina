@@ -1,0 +1,1112 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     39998,       1102]
+NotebookOptionsPosition[     38388,       1075]
+NotebookOutlinePosition[     38788,       1091]
+CellTagsIndexPosition[     38745,       1088]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"derivadaImplicitaAntiS", " ", "=", 
+    RowBox[{"Simplify", "[", 
+     RowBox[{"ImplicitD", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{
+          RowBox[{"Sqrt", "[", 
+           RowBox[{"w", "+", 
+            RowBox[{"k", "^", "2"}]}], "]"}], "*", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"w", "-", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{"1", "-", "\[Nu]"}], ")"}], 
+              RowBox[{"k", "^", "2"}]}]}], ")"}], "^", "2"}], " ", "*", 
+          RowBox[{"Cosh", "[", 
+           RowBox[{
+            RowBox[{"Sqrt", "[", 
+             RowBox[{"w", "+", 
+              RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}], "*", 
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"Sqrt", "[", 
+             RowBox[{"w", "-", 
+              RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}]}], "-", 
+         "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"Sqrt", "[", 
+           RowBox[{"w", "-", 
+            RowBox[{"k", "^", "2"}]}], "]"}], "*", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"w", "+", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{"1", "-", "\[Nu]"}], ")"}], 
+              RowBox[{"k", "^", "2"}]}]}], ")"}], "^", "2"}], " ", "*", 
+          RowBox[{"Sinh", "[", 
+           RowBox[{
+            RowBox[{"Sqrt", "[", 
+             RowBox[{"w", "+", 
+              RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}], "*", 
+          RowBox[{"Cos", "[", 
+           RowBox[{
+            RowBox[{"Sqrt", "[", 
+             RowBox[{"w", "-", 
+              RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}]}]}], "==", 
+        "0"}], ",", " ", "w", ",", " ", "k"}], "]"}], "]"}]}], ";"}], 
+  RowBox[{"(*", 
+   RowBox[{
+   "Calculo", " ", "simbolico", " ", "de", " ", "la", " ", "derivada", " ", 
+    "implicita", " ", "del", " ", "caso", " ", "antisimetrico", " ", 
+    RowBox[{"dw", "/", "dk"}]}], "*)"}]}]], "Input",
+ CellChangeTimes->{{3.9243965294657288`*^9, 3.924396533060375*^9}, {
+   3.924396602626292*^9, 3.9243966170670085`*^9}, {3.9243966624262753`*^9, 
+   3.9243966863503094`*^9}, {3.924396962719532*^9, 3.924397012435278*^9}, {
+   3.9243970498587823`*^9, 3.924397098587943*^9}, {3.9243971778993607`*^9, 
+   3.924397200378751*^9}, 3.9243973866680875`*^9, {3.924397621611925*^9, 
+   3.924397622316233*^9}, {3.924397699237343*^9, 3.924397736265396*^9}, {
+   3.924397865944927*^9, 3.9243978698592825`*^9}, {3.9243982619689846`*^9, 
+   3.924398284663312*^9}, 3.9246064124757195`*^9, {3.92460655816755*^9, 
+   3.9246065617035217`*^9}, {3.924607322004644*^9, 3.924607335819193*^9}, {
+   3.9246135768818626`*^9, 3.924613604705057*^9}, {3.924613645632638*^9, 
+   3.9246136539386187`*^9}, {3.9246136911525345`*^9, 
+   3.924613691548818*^9}},ExpressionUUID->"1b0ab52f-8fc3-4d0b-a56b-\
+9663214c8e00"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"derivadaImplicita2AntiS", " ", "=", " ", 
+   RowBox[{"ImplicitD", "[", 
+    RowBox[{"derivadaImplicitaAntiS", ",", " ", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"Sqrt", "[", 
+         RowBox[{"w", "+", 
+          RowBox[{"k", "^", "2"}]}], "]"}], "*", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"w", "-", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"1", "-", "\[Nu]"}], ")"}], 
+            RowBox[{"k", "^", "2"}]}]}], ")"}], "^", "2"}], " ", "*", 
+        RowBox[{"Cosh", "[", 
+         RowBox[{
+          RowBox[{"Sqrt", "[", 
+           RowBox[{"w", "+", 
+            RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}], "*", 
+        RowBox[{"Sin", "[", 
+         RowBox[{
+          RowBox[{"Sqrt", "[", 
+           RowBox[{"w", "-", 
+            RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}]}], "-", 
+       "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Sqrt", "[", 
+         RowBox[{"w", "-", 
+          RowBox[{"k", "^", "2"}]}], "]"}], "*", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"w", "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"1", "-", "\[Nu]"}], ")"}], 
+            RowBox[{"k", "^", "2"}]}]}], ")"}], "^", "2"}], " ", "*", 
+        RowBox[{"Sinh", "[", 
+         RowBox[{
+          RowBox[{"Sqrt", "[", 
+           RowBox[{"w", "+", 
+            RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}], "*", 
+        RowBox[{"Cos", "[", 
+         RowBox[{
+          RowBox[{"Sqrt", "[", 
+           RowBox[{"w", "-", 
+            RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}]}]}], "==", 
+      "0"}], ",", " ", "w", ",", " ", "k"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+   "Calculo", " ", "simbolico", " ", "de", " ", "la", " ", "segunda", " ", 
+    "derivada", " ", "implicita", " ", "del", " ", "caso", " ", 
+    "antisimetrico", " ", 
+    RowBox[{"d", "^", "2"}], 
+    RowBox[{"w", "/", 
+     RowBox[{"dk", "^", "2"}]}]}], "*)"}]}]}], "Input",
+ CellChangeTimes->{{3.924397895643202*^9, 3.9243979301448236`*^9}, {
+   3.924398214936284*^9, 3.9243982537036953`*^9}, 3.9245622669941483`*^9, {
+   3.924606568705393*^9, 3.9246065698582654`*^9}, {3.9246073434886475`*^9, 
+   3.9246073542404137`*^9}, {3.924608771591047*^9, 3.924608773811699*^9}, {
+   3.924613535379312*^9, 3.924613571226528*^9}, {3.9246136124759736`*^9, 
+   3.924613667390935*^9}},ExpressionUUID->"ca0e7467-4e65-4f3f-a7ef-\
+4ec43f196cfc"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"derivadaImplicitaSim", "=", 
+   RowBox[{"Simplify", "[", 
+    RowBox[{"ImplicitD", "[", 
+     RowBox[{"w", ",", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"Sqrt", "[", 
+          RowBox[{"w", "-", 
+           RowBox[{"k", "^", "2"}]}], "]"}], "*", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"w", "+", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"1", "-", "\[Nu]"}], ")"}], 
+             RowBox[{"k", "^", "2"}]}]}], ")"}], "^", "2"}], " ", "*", 
+         RowBox[{"Cosh", "[", 
+          RowBox[{"Sqrt", "[", 
+           RowBox[{"w", "+", 
+            RowBox[{"k", "^", "2"}]}], "]"}], "]"}], "*", 
+         RowBox[{"Sin", "[", 
+          RowBox[{"Sqrt", "[", 
+           RowBox[{"w", "-", 
+            RowBox[{"k", "^", "2"}]}], "]"}], "]"}]}], "-", 
+        "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"Sqrt", "[", 
+          RowBox[{"w", "+", 
+           RowBox[{"k", "^", "2"}]}], "]"}], "*", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"w", "-", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"1", "-", "\[Nu]"}], ")"}], 
+             RowBox[{"k", "^", "2"}]}]}], ")"}], "^", "2"}], " ", "*", 
+         RowBox[{"Sinh", "[", 
+          RowBox[{"Sqrt", "[", 
+           RowBox[{"w", "+", 
+            RowBox[{"k", "^", "2"}]}], "]"}], "]"}], "*", 
+         RowBox[{"Cos", "[", 
+          RowBox[{"Sqrt", "[", 
+           RowBox[{"w", "-", 
+            RowBox[{"k", "^", "2"}]}], "]"}], "]"}]}]}], "==", "0"}], ",", 
+      " ", "w", ",", " ", "k"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+   "Calculo", " ", "simbolico", " ", "de", " ", "la", " ", "derivada", " ", 
+    "implicita", " ", "del", " ", "caso", " ", "simetrico", " ", 
+    RowBox[{"dw", "/", "dk"}]}], "*)"}]}]}], "Input",
+ CellChangeTimes->{{3.924606591432476*^9, 3.9246066507326317`*^9}, {
+  3.9246136761647806`*^9, 3.92461367681312*^9}, {3.9246249262895617`*^9, 
+  3.9246249264947014`*^9}},
+ CellLabel->
+  "In[168]:=",ExpressionUUID->"f95aef00-0248-4fc9-8dbf-92439cec95c1"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"derivadaImplicita2Sim", " ", "=", 
+   RowBox[{"ImplicitD", "[", 
+    RowBox[{"derivadaImplicitaSim", ",", " ", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"Sqrt", "[", 
+         RowBox[{"w", "-", 
+          RowBox[{"k", "^", "2"}]}], "]"}], "*", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"w", "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"1", "-", "\[Nu]"}], ")"}], 
+            RowBox[{"k", "^", "2"}]}]}], ")"}], "^", "2"}], " ", "*", 
+        RowBox[{"Cosh", "[", 
+         RowBox[{"Sqrt", "[", 
+          RowBox[{"w", "+", 
+           RowBox[{"k", "^", "2"}]}], "]"}], "]"}], "*", 
+        RowBox[{"Sin", "[", 
+         RowBox[{"Sqrt", "[", 
+          RowBox[{"w", "-", 
+           RowBox[{"k", "^", "2"}]}], "]"}], "]"}]}], "-", 
+       "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Sqrt", "[", 
+         RowBox[{"w", "+", 
+          RowBox[{"k", "^", "2"}]}], "]"}], "*", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"w", "-", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"1", "-", "\[Nu]"}], ")"}], 
+            RowBox[{"k", "^", "2"}]}]}], ")"}], "^", "2"}], " ", "*", 
+        RowBox[{"Sinh", "[", 
+         RowBox[{"Sqrt", "[", 
+          RowBox[{"w", "+", 
+           RowBox[{"k", "^", "2"}]}], "]"}], "]"}], "*", 
+        RowBox[{"Cos", "[", 
+         RowBox[{"Sqrt", "[", 
+          RowBox[{"w", "-", 
+           RowBox[{"k", "^", "2"}]}], "]"}], "]"}]}]}], "==", "0"}], ",", " ",
+      "w", ",", " ", "k"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+   "Calculo", " ", "simbolico", " ", "de", " ", "la", " ", "segunda", " ", 
+    "derivada", " ", "implicita", " ", "del", " ", "caso", " ", 
+    "antisimetrico", " ", 
+    RowBox[{"d", "^", "2"}], 
+    RowBox[{"w", "/", 
+     RowBox[{"dk", "^", "2"}]}]}], "*)"}]}]}], "Input",
+ CellChangeTimes->{{3.9246066565349135`*^9, 3.924606677134843*^9}, {
+  3.924608397359149*^9, 3.924608409148139*^9}, {3.9246085780799775`*^9, 
+  3.9246085790598497`*^9}, {3.924613700845158*^9, 3.9246137014213285`*^9}, {
+  3.924620661110735*^9, 3.924620700416052*^9}},
+ CellLabel->
+  "In[169]:=",ExpressionUUID->"27e954c6-8d79-4d17-b722-fa1621b80c69"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+    "Masa", " ", "efectiva", " ", "caso", " ", "Antisimetrico", " ", "cerca", 
+     " ", "de", " ", "\[Omega]"}], " ", "=", " ", "200"}], "*)"}], 
+  RowBox[{"Re", "[", 
+   RowBox[{
+    RowBox[{"With", "[", 
+     RowBox[{
+      RowBox[{"{", " ", 
+       RowBox[{"k", "=", "0.0"}], "}"}], ",", " ", 
+      RowBox[{"Evaluate", "[", 
+       RowBox[{"1", "/", "derivadaImplicita2AntiS"}], "]"}]}], "]"}], "/.", 
+    RowBox[{"With", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"k", "=", "0.0"}], "}"}], ",", " ", 
+      RowBox[{"FindRoot", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"Sqrt", "[", 
+            RowBox[{"w", "+", 
+             RowBox[{"k", "^", "2"}]}], "]"}], "*", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"w", "-", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{"1", "-", "\[Nu]"}], ")"}], 
+               RowBox[{"k", "^", "2"}]}]}], ")"}], "^", "2"}], " ", "*", 
+           RowBox[{"Cosh", "[", 
+            RowBox[{
+             RowBox[{"Sqrt", "[", 
+              RowBox[{"w", "+", 
+               RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}], "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"Sqrt", "[", 
+              RowBox[{"w", "-", 
+               RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}]}], "-", 
+          "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"Sqrt", "[", 
+            RowBox[{"w", "-", 
+             RowBox[{"k", "^", "2"}]}], "]"}], "*", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"w", "+", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{"1", "-", "\[Nu]"}], ")"}], 
+               RowBox[{"k", "^", "2"}]}]}], ")"}], "^", "2"}], " ", "*", 
+           RowBox[{"Sinh", "[", 
+            RowBox[{
+             RowBox[{"Sqrt", "[", 
+              RowBox[{"w", "+", 
+               RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}], "*", 
+           RowBox[{"Cos", "[", 
+            RowBox[{
+             RowBox[{"Sqrt", "[", 
+              RowBox[{"w", "-", 
+               RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}]}]}], "==", 
+         "0"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"w", ",", 
+          RowBox[{
+           RowBox[{"Abs", "[", "k", "]"}], "+", "200.0"}]}], "}"}], ",", " ", 
+        RowBox[{"WorkingPrecision", "->", "20"}]}], "]"}]}], "]"}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.9246200276722097`*^9, 3.9246201424958763`*^9}, {
+  3.9246202552048664`*^9, 3.924620314862114*^9}, {3.924626097875942*^9, 
+  3.924626100562065*^9}},
+ CellLabel->
+  "In[176]:=",ExpressionUUID->"8989a9d9-5bb8-4baa-8e38-337045b2c965"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+    "Masa", " ", "efectiva", " ", "caso", " ", "Antisimetrico", " ", "cerca", 
+     " ", "de", " ", "\[Omega]"}], " ", "=", " ", "60"}], "*)"}], 
+  RowBox[{"Re", "[", 
+   RowBox[{
+    RowBox[{"With", "[", 
+     RowBox[{
+      RowBox[{"{", " ", 
+       RowBox[{"k", "=", "0.0"}], "}"}], ",", " ", 
+      RowBox[{"Evaluate", "[", 
+       RowBox[{"1", "/", "derivadaImplicita2AntiS"}], "]"}]}], "]"}], "/.", 
+    RowBox[{"With", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"k", "=", "0.0"}], "}"}], ",", " ", 
+      RowBox[{"FindRoot", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"Sqrt", "[", 
+            RowBox[{"w", "+", 
+             RowBox[{"k", "^", "2"}]}], "]"}], "*", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"w", "-", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{"1", "-", "\[Nu]"}], ")"}], 
+               RowBox[{"k", "^", "2"}]}]}], ")"}], "^", "2"}], " ", "*", 
+           RowBox[{"Cosh", "[", 
+            RowBox[{
+             RowBox[{"Sqrt", "[", 
+              RowBox[{"w", "+", 
+               RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}], "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"Sqrt", "[", 
+              RowBox[{"w", "-", 
+               RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}]}], "-", 
+          "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"Sqrt", "[", 
+            RowBox[{"w", "-", 
+             RowBox[{"k", "^", "2"}]}], "]"}], "*", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"w", "+", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{"1", "-", "\[Nu]"}], ")"}], 
+               RowBox[{"k", "^", "2"}]}]}], ")"}], "^", "2"}], " ", "*", 
+           RowBox[{"Sinh", "[", 
+            RowBox[{
+             RowBox[{"Sqrt", "[", 
+              RowBox[{"w", "+", 
+               RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}], "*", 
+           RowBox[{"Cos", "[", 
+            RowBox[{
+             RowBox[{"Sqrt", "[", 
+              RowBox[{"w", "-", 
+               RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}]}]}], "==", 
+         "0"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"w", ",", 
+          RowBox[{
+           RowBox[{"Abs", "[", "k", "]"}], "+", "60.0"}]}], "}"}], ",", " ", 
+        RowBox[{"WorkingPrecision", "->", "MachinePrecision"}]}], "]"}]}], 
+     "]"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.9246202002689247`*^9, 3.9246202496811285`*^9}, {
+  3.9246202944708633`*^9, 3.9246203079062243`*^9}, {3.9246206301839323`*^9, 
+  3.924620631851122*^9}, {3.924626513956905*^9, 
+  3.9246265149559307`*^9}},ExpressionUUID->"9378d8f2-3a74-495a-92fd-\
+aac5f5cf4681"],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+    "Evaluacion", " ", "de", " ", "la", " ", "masa", " ", "efectiva", " ", 
+     "en", " ", "el", " ", "origen"}], ",", " ", 
+    RowBox[{"caso", " ", "antisimetrico"}]}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Re", "[", 
+    RowBox[{
+     RowBox[{"With", "[", 
+      RowBox[{
+       RowBox[{"{", " ", 
+        RowBox[{"k", "=", "waveN"}], "}"}], ",", " ", 
+       RowBox[{"Evaluate", "[", 
+        RowBox[{"1", "/", "derivadaImplicita2AntiS"}], "]"}]}], "]"}], "/.", 
+     RowBox[{"With", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"k", "=", "waveN"}], "}"}], ",", " ", 
+       RowBox[{"FindRoot", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{
+            RowBox[{"Sqrt", "[", 
+             RowBox[{"w", "+", 
+              RowBox[{"k", "^", "2"}]}], "]"}], "*", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"w", "-", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"1", "-", "\[Nu]"}], ")"}], 
+                RowBox[{"k", "^", "2"}]}]}], ")"}], "^", "2"}], " ", "*", 
+            RowBox[{"Cosh", "[", 
+             RowBox[{
+              RowBox[{"Sqrt", "[", 
+               RowBox[{"w", "+", 
+                RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}], "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"Sqrt", "[", 
+               RowBox[{"w", "-", 
+                RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}]}], "-", 
+           "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{"Sqrt", "[", 
+             RowBox[{"w", "-", 
+              RowBox[{"k", "^", "2"}]}], "]"}], "*", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"w", "+", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"1", "-", "\[Nu]"}], ")"}], 
+                RowBox[{"k", "^", "2"}]}]}], ")"}], "^", "2"}], " ", "*", 
+            RowBox[{"Sinh", "[", 
+             RowBox[{
+              RowBox[{"Sqrt", "[", 
+               RowBox[{"w", "+", 
+                RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}], "*", 
+            RowBox[{"Cos", "[", 
+             RowBox[{
+              RowBox[{"Sqrt", "[", 
+               RowBox[{"w", "-", 
+                RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}]}]}], "==",
+           "0"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"w", ",", 
+           RowBox[{
+            RowBox[{"Abs", "[", "k", "]"}], "+", "0.0"}]}], "}"}], ",", " ", 
+         RowBox[{"WorkingPrecision", "->", "14"}]}], "]"}]}], "]"}]}], "]"}], 
+   ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"waveN", ",", " ", 
+     RowBox[{"10", "^", 
+      RowBox[{"-", 
+       RowBox[{"Range", "[", "7", "]"}]}]}]}], " ", "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.9246272724538617`*^9, 3.9246273310540733`*^9}, {
+  3.9246273689652777`*^9, 
+  3.9246273713116217`*^9}},ExpressionUUID->"ac94705a-4876-4dcf-a338-\
+613a9019bd91"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+    "Masa", " ", "efectiva", " ", "caso", " ", "Antisimetrico", " ", "cerca", 
+     " ", "de", " ", "\[Omega]"}], " ", "=", " ", 
+    RowBox[{"-", "60"}]}], "*)"}], 
+  RowBox[{"Re", "[", 
+   RowBox[{
+    RowBox[{"With", "[", 
+     RowBox[{
+      RowBox[{"{", " ", 
+       RowBox[{"k", "=", "0.0"}], "}"}], ",", " ", 
+      RowBox[{"Evaluate", "[", 
+       RowBox[{"1", "/", "derivadaImplicita2AntiS"}], "]"}]}], "]"}], "/.", 
+    RowBox[{"With", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"k", "=", "0.0"}], "}"}], ",", " ", 
+      RowBox[{"FindRoot", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"Sqrt", "[", 
+            RowBox[{"w", "+", 
+             RowBox[{"k", "^", "2"}]}], "]"}], "*", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"w", "-", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{"1", "-", "\[Nu]"}], ")"}], 
+               RowBox[{"k", "^", "2"}]}]}], ")"}], "^", "2"}], " ", "*", 
+           RowBox[{"Cosh", "[", 
+            RowBox[{
+             RowBox[{"Sqrt", "[", 
+              RowBox[{"w", "+", 
+               RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}], "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"Sqrt", "[", 
+              RowBox[{"w", "-", 
+               RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}]}], "-", 
+          "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"Sqrt", "[", 
+            RowBox[{"w", "-", 
+             RowBox[{"k", "^", "2"}]}], "]"}], "*", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"w", "+", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{"1", "-", "\[Nu]"}], ")"}], 
+               RowBox[{"k", "^", "2"}]}]}], ")"}], "^", "2"}], " ", "*", 
+           RowBox[{"Sinh", "[", 
+            RowBox[{
+             RowBox[{"Sqrt", "[", 
+              RowBox[{"w", "+", 
+               RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}], "*", 
+           RowBox[{"Cos", "[", 
+            RowBox[{
+             RowBox[{"Sqrt", "[", 
+              RowBox[{"w", "-", 
+               RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}]}]}], "==", 
+         "0"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"w", ",", 
+          RowBox[{
+           RowBox[{"Abs", "[", "k", "]"}], "-", "60.0"}]}], "}"}], ",", " ", 
+        RowBox[{"WorkingPrecision", "->", "MachinePrecision"}]}], "]"}]}], 
+     "]"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.9246259598632417`*^9, 3.924625967921275*^9}},
+ CellLabel->
+  "In[175]:=",ExpressionUUID->"0d90c2ed-419c-4a3f-b529-c2bc747af223"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+    "Masa", " ", "efectiva", " ", "caso", " ", "Antisimetrico", " ", "cerca", 
+     " ", "de", " ", "\[Omega]"}], " ", "=", " ", "200"}], "*)"}], 
+  RowBox[{"Re", "[", 
+   RowBox[{
+    RowBox[{"With", "[", 
+     RowBox[{
+      RowBox[{"{", " ", 
+       RowBox[{"k", "=", "0.0"}], "}"}], ",", " ", 
+      RowBox[{"Evaluate", "[", 
+       RowBox[{"1", "/", "derivadaImplicita2AntiS"}], "]"}]}], "]"}], "/.", 
+    RowBox[{"With", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"k", "=", "0.0"}], "}"}], ",", " ", 
+      RowBox[{"FindRoot", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"Sqrt", "[", 
+            RowBox[{"w", "+", 
+             RowBox[{"k", "^", "2"}]}], "]"}], "*", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"w", "-", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{"1", "-", "\[Nu]"}], ")"}], 
+               RowBox[{"k", "^", "2"}]}]}], ")"}], "^", "2"}], " ", "*", 
+           RowBox[{"Cosh", "[", 
+            RowBox[{
+             RowBox[{"Sqrt", "[", 
+              RowBox[{"w", "+", 
+               RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}], "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"Sqrt", "[", 
+              RowBox[{"w", "-", 
+               RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}]}], "-", 
+          "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"Sqrt", "[", 
+            RowBox[{"w", "-", 
+             RowBox[{"k", "^", "2"}]}], "]"}], "*", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"w", "+", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{"1", "-", "\[Nu]"}], ")"}], 
+               RowBox[{"k", "^", "2"}]}]}], ")"}], "^", "2"}], " ", "*", 
+           RowBox[{"Sinh", "[", 
+            RowBox[{
+             RowBox[{"Sqrt", "[", 
+              RowBox[{"w", "+", 
+               RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}], "*", 
+           RowBox[{"Cos", "[", 
+            RowBox[{
+             RowBox[{"Sqrt", "[", 
+              RowBox[{"w", "-", 
+               RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}]}]}], "==", 
+         "0"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"w", ",", 
+          RowBox[{
+           RowBox[{"Abs", "[", "k", "]"}], "-", "200.0"}]}], "}"}], ",", " ", 
+        RowBox[{"WorkingPrecision", "->", "20"}]}], "]"}]}], "]"}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.924626162901993*^9, 3.9246261632288227`*^9}},
+ CellLabel->
+  "In[177]:=",ExpressionUUID->"0b557bce-3f78-493d-a442-53b1d0ffef0c"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+    "Masa", " ", "efectiva", " ", "caso", " ", "simetrico", " ", "cerca", " ",
+      "de", " ", "\[Omega]"}], " ", "=", " ", "200"}], "*)"}], 
+  RowBox[{"Re", "[", 
+   RowBox[{
+    RowBox[{"With", "[", 
+     RowBox[{
+      RowBox[{"{", " ", 
+       RowBox[{"k", "=", "0.0"}], "}"}], ",", " ", 
+      RowBox[{"Evaluate", "[", 
+       RowBox[{"1", "/", "derivadaImplicita2Sim"}], "]"}]}], "]"}], "/.", 
+    RowBox[{"With", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"k", "=", "0.0"}], "}"}], ",", " ", 
+      RowBox[{"FindRoot", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"Sqrt", "[", 
+            RowBox[{"w", "-", 
+             RowBox[{"k", "^", "2"}]}], "]"}], "*", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"w", "+", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{"1", "-", "\[Nu]"}], ")"}], 
+               RowBox[{"k", "^", "2"}]}]}], ")"}], "^", "2"}], " ", "*", 
+           RowBox[{"Cosh", "[", 
+            RowBox[{
+             RowBox[{"Sqrt", "[", 
+              RowBox[{"w", "+", 
+               RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}], "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"Sqrt", "[", 
+              RowBox[{"w", "-", 
+               RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}]}], "-", 
+          "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"Sqrt", "[", 
+            RowBox[{"w", "+", 
+             RowBox[{"k", "^", "2"}]}], "]"}], "*", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"w", "-", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{"1", "-", "\[Nu]"}], ")"}], 
+               RowBox[{"k", "^", "2"}]}]}], ")"}], "^", "2"}], " ", "*", 
+           RowBox[{"Sinh", "[", 
+            RowBox[{
+             RowBox[{"Sqrt", "[", 
+              RowBox[{"w", "+", 
+               RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}], "*", 
+           RowBox[{"Cos", "[", 
+            RowBox[{
+             RowBox[{"Sqrt", "[", 
+              RowBox[{"w", "-", 
+               RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}]}]}], "==", 
+         "0"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"w", ",", 
+          RowBox[{
+           RowBox[{"Abs", "[", "k", "]"}], "+", "200.0"}]}], "}"}], ",", " ", 
+        RowBox[{"WorkingPrecision", "->", "MachinePrecision"}]}], "]"}]}], 
+     "]"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.9246203566600647`*^9, 3.9246204681185837`*^9}, {
+  3.9246242789794416`*^9, 3.9246242969532385`*^9}, {3.924625316760007*^9, 
+  3.9246253207895594`*^9}},
+ CellLabel->
+  "In[172]:=",ExpressionUUID->"013ee63f-66bb-4695-a2c1-b299a68edf36"],
+
+Cell[BoxData[
+ RowBox[{"Re", "[", 
+  RowBox[{
+   RowBox[{"With", "[", 
+    RowBox[{
+     RowBox[{"{", " ", 
+      RowBox[{"k", "=", "0.0"}], "}"}], ",", " ", 
+     RowBox[{"Evaluate", "[", 
+      RowBox[{"1", "/", "derivadaImplicita2Sim"}], "]"}]}], "]"}], "/.", 
+   RowBox[{"With", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"k", "=", "0.0"}], "}"}], ",", " ", 
+     RowBox[{"FindRoot", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{
+          RowBox[{"Sqrt", "[", 
+           RowBox[{"w", "-", 
+            RowBox[{"k", "^", "2"}]}], "]"}], "*", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"w", "+", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{"1", "-", "\[Nu]"}], ")"}], 
+              RowBox[{"k", "^", "2"}]}]}], ")"}], "^", "2"}], " ", "*", 
+          RowBox[{"Cosh", "[", 
+           RowBox[{
+            RowBox[{"Sqrt", "[", 
+             RowBox[{"w", "+", 
+              RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}], "*", 
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"Sqrt", "[", 
+             RowBox[{"w", "-", 
+              RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}]}], "-", 
+         "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"Sqrt", "[", 
+           RowBox[{"w", "+", 
+            RowBox[{"k", "^", "2"}]}], "]"}], "*", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"w", "-", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{"1", "-", "\[Nu]"}], ")"}], 
+              RowBox[{"k", "^", "2"}]}]}], ")"}], "^", "2"}], " ", "*", 
+          RowBox[{"Sinh", "[", 
+           RowBox[{
+            RowBox[{"Sqrt", "[", 
+             RowBox[{"w", "+", 
+              RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}], "*", 
+          RowBox[{"Cos", "[", 
+           RowBox[{
+            RowBox[{"Sqrt", "[", 
+             RowBox[{"w", "-", 
+              RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}]}]}], "==", 
+        "0"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"w", ",", 
+         RowBox[{
+          RowBox[{"Abs", "[", "k", "]"}], "+", "60.0"}]}], "}"}], ",", " ", 
+       RowBox[{"WorkingPrecision", "->", "MachinePrecision"}]}], "]"}]}], 
+    "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.9246204937944746`*^9, 3.9246204954165907`*^9}, {
+  3.9246205581523695`*^9, 3.924620559150303*^9}},
+ CellLabel->
+  "In[170]:=",ExpressionUUID->"a66d7053-2203-47fb-a4da-238b971ee067"],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+    "Evaluacion", " ", "de", " ", "la", " ", "masa", " ", "efectiva", " ", 
+     "en", " ", "el", " ", "origen"}], ",", " ", 
+    RowBox[{"caso", " ", "antisimetrico"}]}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Re", "[", 
+    RowBox[{
+     RowBox[{"With", "[", 
+      RowBox[{
+       RowBox[{"{", " ", 
+        RowBox[{"k", "=", "waveN"}], "}"}], ",", " ", 
+       RowBox[{"Evaluate", "[", 
+        RowBox[{"1", "/", "derivadaImplicita2Sim"}], "]"}]}], "]"}], "/.", 
+     RowBox[{"With", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"k", "=", "waveN"}], "}"}], ",", " ", 
+       RowBox[{"FindRoot", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{
+            RowBox[{"Sqrt", "[", 
+             RowBox[{"w", "-", 
+              RowBox[{"k", "^", "2"}]}], "]"}], "*", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"w", "+", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"1", "-", "\[Nu]"}], ")"}], 
+                RowBox[{"k", "^", "2"}]}]}], ")"}], "^", "2"}], " ", "*", 
+            RowBox[{"Cosh", "[", 
+             RowBox[{
+              RowBox[{"Sqrt", "[", 
+               RowBox[{"w", "+", 
+                RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}], "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"Sqrt", "[", 
+               RowBox[{"w", "-", 
+                RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}]}], "-", 
+           "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{"Sqrt", "[", 
+             RowBox[{"w", "+", 
+              RowBox[{"k", "^", "2"}]}], "]"}], "*", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"w", "-", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"1", "-", "\[Nu]"}], ")"}], 
+                RowBox[{"k", "^", "2"}]}]}], ")"}], "^", "2"}], " ", "*", 
+            RowBox[{"Sinh", "[", 
+             RowBox[{
+              RowBox[{"Sqrt", "[", 
+               RowBox[{"w", "+", 
+                RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}], "*", 
+            RowBox[{"Cos", "[", 
+             RowBox[{
+              RowBox[{"Sqrt", "[", 
+               RowBox[{"w", "-", 
+                RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}]}]}], "==",
+           "0"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"w", ",", 
+           RowBox[{
+            RowBox[{"Abs", "[", "k", "]"}], "+", "0.0"}]}], "}"}], ",", " ", 
+         RowBox[{"WorkingPrecision", "->", "20"}]}], "]"}]}], "]"}]}], "]"}], 
+   ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"waveN", ",", " ", 
+     RowBox[{"10", "^", 
+      RowBox[{"-", 
+       RowBox[{"Range", "[", "9", "]"}]}]}]}], " ", "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.9246274172866755`*^9, 3.9246274918706455`*^9}, {
+  3.9246275262434835`*^9, 3.92462756423913*^9}},
+ CellLabel->
+  "In[195]:=",ExpressionUUID->"d4980b04-d8c5-4465-82eb-892d7c80126a"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+    "Masa", " ", "efectiva", " ", "Caso", " ", "simetrico", " ", "\[Omega]"}],
+     "=", 
+    RowBox[{"-", "60"}]}], "*)"}], 
+  RowBox[{"Re", "[", 
+   RowBox[{
+    RowBox[{"With", "[", 
+     RowBox[{
+      RowBox[{"{", " ", 
+       RowBox[{"k", "=", "0.0"}], "}"}], ",", " ", 
+      RowBox[{"Evaluate", "[", 
+       RowBox[{"1", "/", "derivadaImplicita2Sim"}], "]"}]}], "]"}], "/.", 
+    RowBox[{"With", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"k", "=", "0.0"}], "}"}], ",", " ", 
+      RowBox[{"FindRoot", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"Sqrt", "[", 
+            RowBox[{"w", "-", 
+             RowBox[{"k", "^", "2"}]}], "]"}], "*", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"w", "+", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{"1", "-", "\[Nu]"}], ")"}], 
+               RowBox[{"k", "^", "2"}]}]}], ")"}], "^", "2"}], " ", "*", 
+           RowBox[{"Cosh", "[", 
+            RowBox[{
+             RowBox[{"Sqrt", "[", 
+              RowBox[{"w", "+", 
+               RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}], "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"Sqrt", "[", 
+              RowBox[{"w", "-", 
+               RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}]}], "-", 
+          "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"Sqrt", "[", 
+            RowBox[{"w", "+", 
+             RowBox[{"k", "^", "2"}]}], "]"}], "*", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"w", "-", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{"1", "-", "\[Nu]"}], ")"}], 
+               RowBox[{"k", "^", "2"}]}]}], ")"}], "^", "2"}], " ", "*", 
+           RowBox[{"Sinh", "[", 
+            RowBox[{
+             RowBox[{"Sqrt", "[", 
+              RowBox[{"w", "+", 
+               RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}], "*", 
+           RowBox[{"Cos", "[", 
+            RowBox[{
+             RowBox[{"Sqrt", "[", 
+              RowBox[{"w", "-", 
+               RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}]}]}], "==", 
+         "0"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"w", ",", 
+          RowBox[{
+           RowBox[{"Abs", "[", "k", "]"}], "-", "60.0"}]}], "}"}], ",", " ", 
+        RowBox[{"WorkingPrecision", "->", "MachinePrecision"}]}], "]"}]}], 
+     "]"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.924625355412319*^9, 3.9246254038342924`*^9}},
+ CellLabel->
+  "In[173]:=",ExpressionUUID->"587e140e-7d9a-4f5e-b28c-6bafb3df84f4"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+    "Masa", " ", "efectiva", " ", "Caso", " ", "simetrico", " ", "\[Omega]"}],
+     "=", 
+    RowBox[{"-", "200"}]}], "*)"}], 
+  RowBox[{"Re", "[", 
+   RowBox[{
+    RowBox[{"With", "[", 
+     RowBox[{
+      RowBox[{"{", " ", 
+       RowBox[{"k", "=", "0.0"}], "}"}], ",", " ", 
+      RowBox[{"Evaluate", "[", 
+       RowBox[{"1", "/", "derivadaImplicita2Sim"}], "]"}]}], "]"}], "/.", 
+    RowBox[{"With", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"k", "=", "0.0"}], "}"}], ",", " ", 
+      RowBox[{"FindRoot", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"Sqrt", "[", 
+            RowBox[{"w", "-", 
+             RowBox[{"k", "^", "2"}]}], "]"}], "*", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"w", "+", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{"1", "-", "\[Nu]"}], ")"}], 
+               RowBox[{"k", "^", "2"}]}]}], ")"}], "^", "2"}], " ", "*", 
+           RowBox[{"Cosh", "[", 
+            RowBox[{
+             RowBox[{"Sqrt", "[", 
+              RowBox[{"w", "+", 
+               RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}], "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"Sqrt", "[", 
+              RowBox[{"w", "-", 
+               RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}]}], "-", 
+          "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"Sqrt", "[", 
+            RowBox[{"w", "+", 
+             RowBox[{"k", "^", "2"}]}], "]"}], "*", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"w", "-", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{"1", "-", "\[Nu]"}], ")"}], 
+               RowBox[{"k", "^", "2"}]}]}], ")"}], "^", "2"}], " ", "*", 
+           RowBox[{"Sinh", "[", 
+            RowBox[{
+             RowBox[{"Sqrt", "[", 
+              RowBox[{"w", "+", 
+               RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}], "*", 
+           RowBox[{"Cos", "[", 
+            RowBox[{
+             RowBox[{"Sqrt", "[", 
+              RowBox[{"w", "-", 
+               RowBox[{"k", "^", "2"}]}], "]"}], "/", "2"}], "]"}]}]}], "==", 
+         "0"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"w", ",", 
+          RowBox[{
+           RowBox[{"Abs", "[", "k", "]"}], "-", "200.0"}]}], "}"}], ",", " ", 
+        RowBox[{"WorkingPrecision", "->", "MachinePrecision"}]}], "]"}]}], 
+     "]"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.9246259202001133`*^9, 3.924625921961876*^9}, {
+  3.924627064607873*^9, 3.9246270695121284`*^9}},
+ CellLabel->
+  "In[178]:=",ExpressionUUID->"bb887910-86ff-4eac-b220-6881d4973dd8"]
+},
+WindowSize->{479, 472},
+WindowMargins->{{Automatic, -5}, {Automatic, 0}},
+FrontEndVersion->"13.1 para Microsoft Windows (64-bit) (August 22, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"04a089be-8115-4012-9b57-6ac8b035e9c5"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 2940, 70, 349, "Input",ExpressionUUID->"1b0ab52f-8fc3-4d0b-a56b-9663214c8e00"],
+Cell[3501, 92, 2524, 67, 262, "Input",ExpressionUUID->"ca0e7467-4e65-4f3f-a7ef-4ec43f196cfc"],
+Cell[6028, 161, 2148, 58, 298, "Input",ExpressionUUID->"f95aef00-0248-4fc9-8dbf-92439cec95c1"],
+Cell[8179, 221, 2274, 61, 262, "Input",ExpressionUUID->"27e954c6-8d79-4d17-b722-fa1621b80c69"],
+Cell[10456, 284, 2792, 77, 470, "Input",ExpressionUUID->"8989a9d9-5bb8-4baa-8e38-337045b2c965"],
+Cell[13251, 363, 2835, 77, 470, "Input",ExpressionUUID->"9378d8f2-3a74-495a-92fd-aac5f5cf4681"],
+Cell[16089, 442, 3065, 83, 521, "Input",ExpressionUUID->"ac94705a-4876-4dcf-a338-613a9019bd91"],
+Cell[19157, 527, 2724, 76, 470, "Input",ExpressionUUID->"0d90c2ed-419c-4a3f-b529-c2bc747af223"],
+Cell[21884, 605, 2690, 75, 470, "Input",ExpressionUUID->"0b557bce-3f78-493d-a442-53b1d0ffef0c"],
+Cell[24577, 682, 2806, 77, 486, "Input",ExpressionUUID->"013ee63f-66bb-4695-a2c1-b299a68edf36"],
+Cell[27386, 761, 2489, 70, 431, "Input",ExpressionUUID->"a66d7053-2203-47fb-a4da-238b971ee067"],
+Cell[29878, 833, 3083, 83, 521, "Input",ExpressionUUID->"d4980b04-d8c5-4465-82eb-892d7c80126a"],
+Cell[32964, 918, 2682, 76, 451, "Input",ExpressionUUID->"587e140e-7d9a-4f5e-b28c-6bafb3df84f4"],
+Cell[35649, 996, 2735, 77, 486, "Input",ExpressionUUID->"bb887910-86ff-4eac-b220-6881d4973dd8"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
